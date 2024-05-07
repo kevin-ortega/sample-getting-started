@@ -3,7 +3,7 @@ ARG VERSION=1.0
 ARG REVISION=SNAPSHOT
 
 LABEL \
-  org.opencontainers.image.authors="Alasdair Nottingham" \
+  org.opencontainers.image.authors="Sheriff of Nottingham" \
   org.opencontainers.image.vendor="IBM" \
   org.opencontainers.image.url="local" \
   org.opencontainers.image.source="https://github.com/OpenLiberty/sample-getting-started" \
