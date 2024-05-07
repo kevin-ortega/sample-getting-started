@@ -33,14 +33,14 @@ main() {
 
     # Build and push the app image
     ARCH_IMAGE="${IMAGE}-${arch}"
-    echo "****** Building image: ${ARCH_IMAGE}"
+    echo "****** Building the image: ${ARCH_IMAGE}"
     docker build -t "${ARCH_IMAGE}" .
     if [ "$?" != "0" ]; then
         echo "Error building app image: ${ARCH_IMAGE}"
         exit 1
     fi 
 
-    echo "****** Pushing image: ${ARCH_IMAGE}"
+    echo "****** Pushing the image: ${ARCH_IMAGE}"
     docker push "${ARCH_IMAGE}"
     if [ "$?" != "0" ]; then
         echo "Error pushing app image: ${ARCH_IMAGE}"
